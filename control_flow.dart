@@ -1,5 +1,5 @@
 void main() {
-  switchCase();
+  forLoop();
 }
 
 void ifElse() {
@@ -37,5 +37,17 @@ void switchCase() {
       break;
     default:
       print("Invalid day.");
+  }
+}
+
+void ternaryOperator() {
+  int a = 10;
+  String result = (a % 2 == 0) ? "Even" : "Odd";
+  print("The number $a is $result.");
+}
+
+void forLoop() {
+  for (int i = 0; i < 5; i++) {
+    print("Iteration: $i");
   }
 }
