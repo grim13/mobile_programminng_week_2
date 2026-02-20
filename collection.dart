@@ -13,6 +13,8 @@ void listExample() {
 void setExample() {
   Set<int> numbers = {1, 2, 3, 4, 5};
   print("Numbers: $numbers");
+  numbers.add(6); // Adding a new element to the set
+  print("Updated Numbers: $numbers");
 }
 
 void mapExample() {
