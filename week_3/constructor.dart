@@ -27,6 +27,10 @@ class Store {
       product.displayInfo();
     }
   }
+
+  int totalProducts() {
+    return products.length;
+  }
 }
 
 void main() {
@@ -42,6 +46,8 @@ void main() {
   );
 
   store1.displayStoreInfo();
+  print('Total Products in Store 1: ${store1.totalProducts()}');
   print('---');
   store2.displayStoreInfo();
+  print('Total Products in Store 2: ${store2.totalProducts()}');
 }
