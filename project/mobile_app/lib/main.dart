@@ -35,16 +35,27 @@ class MainApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Container(
-              height: 80,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
+            Stack(
+              children: [
+                Container(
+                  height: 80,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30),
+                    ),
+                    color: Colors.blue,
+                  ),
                 ),
-                color: Colors.blue,
-              ),
+                Center(
+                  child: CircleAvatar(
+                    radius: 60,
+                    backgroundColor: Colors.blue[200],
+                    child: Icon(Icons.person, size: 100, color: Colors.white),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
