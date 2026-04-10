@@ -12,26 +12,42 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'Aplikasi Mobile',
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 24,
+          title: Center(
+            child: Text(
+              'Profil Mahasiswa',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
             ),
           ),
-          elevation: 100,
           backgroundColor: Colors.blue,
           actions: [
             IconButton(
-              icon: Icon(Icons.search),
-              onPressed: () {
-                // Aksi ketika tombol pencarian ditekan
-              },
+              icon: Icon(
+                Icons.notification_important_rounded,
+                color: Colors.white,
+              ),
+              onPressed: () {},
             ),
           ],
         ),
-        body: Center(child: Text('Hello World!')),
+        body: Column(
+          children: [
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
+                ),
+                color: Colors.blue,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
